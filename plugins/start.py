@@ -89,11 +89,11 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
         )
-        await message.reply_text(
+        await message.reply_photo(
+            photo = START_PIC,
             text = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
