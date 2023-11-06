@@ -36,7 +36,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = "https://graph.org/file/864483e9fb1cec38b67fe.jpg"
+START_PIC = "https://graph.org/file/f10a6b5399f2fe5454343.jpg"
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
