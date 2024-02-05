@@ -14,7 +14,6 @@ async def channel_post(client: Client, message: Message):
     reply_text = await message.reply_text("𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩...!", quote = True)
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
-        await post_message.delete()
     except FloodWait as e:
         await asyncio.sleep(e.x)
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
