@@ -79,11 +79,11 @@ async def start_command(client: Client, message: Message):
                 xfile = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
                 await asyncio.sleep(0.5)
                 xmsg = await xfile.reply_text(
-            f"<b>✍️ Nᴏᴛᴇ : Aʙᴏᴠᴇ Fɪʟᴇ Wɪʟʟ Bᴇ Dᴇʟᴇᴛᴇᴅ Wɪᴛʜɪɴ 30 Mɪɴᴜᴛᴇs..</b>\nPʟᴇᴀsᴇ Mᴀᴋᴇ Sᴜʀᴇ Tʜᴀᴛ Yᴏᴜ Fᴏʀᴡᴀʀᴅ ⏩ Tʜɪs Fɪʟᴇ Tᴏ Yᴏᴜʀ Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs ᴏʀ Fʀɪᴇɴᴅs.\n\n<b>✍️ नोट : ऊपर दिया गया Fɪʟᴇ 30 मिनट बाद डिलीट हो जाएगा</b>\nइसलिए कृपया इस Fɪʟᴇ को अपने किसी दोस्त को या Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs में Fᴏʀᴡᴀʀᴅ ⏩ कर ले ।</b>",
+            f"<b>✍️ Nᴏᴛᴇ : Aʙᴏᴠᴇ Fɪʟᴇ Wɪʟʟ Bᴇ Dᴇʟᴇᴛᴇᴅ Wɪᴛʜɪɴ 5 Mɪɴᴜᴛᴇs..</b>\nPʟᴇᴀsᴇ Mᴀᴋᴇ Sᴜʀᴇ Tʜᴀᴛ Yᴏᴜ Fᴏʀᴡᴀʀᴅ ⏩ Tʜɪs Fɪʟᴇ Tᴏ Yᴏᴜʀ Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs ᴏʀ Fʀɪᴇɴᴅs.\n\n<b>✍️ नोट : ऊपर दिया गया Fɪʟᴇ 5 मिनट बाद डिलीट हो जाएगा</b>\nइसलिए कृपया इस Fɪʟᴇ को अपने किसी दोस्त को या Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs में Fᴏʀᴡᴀʀᴅ ⏩ कर ले ।</b>",
             disable_web_page_preview=True,
             quote=True
         )
-                await asyncio.sleep(1800)
+                await asyncio.sleep(300)
                 await xfile.delete()
                 await xmsg.edit("⦸ <i>This message was deleted</i>")
             except FloodWait as e:
