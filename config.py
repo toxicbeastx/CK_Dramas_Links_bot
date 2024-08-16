@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_PIC = "https://graph.org/file/f10a6b5399f2fe5454343.jpg"
 
 #start message
-START_MSG = "Hello {first}\n\n𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗜𝗦 𝗢𝗪𝗡𝗘𝗗 𝗕𝗬 @PS_Korean_Drama_Hindi\n\n𝗠𝗔𝗜𝗡𝗧𝗔𝗜𝗡𝗘𝗗 𝗕𝗬 @Botography"
+START_MSG = "Hello {first}\n\n𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗜𝗦 𝗢𝗪𝗡𝗘𝗗 𝗕𝗬 @PS_corporation_in\n\n𝗠𝗔𝗜𝗡𝗧𝗔𝗜𝗡𝗘𝗗 𝗕𝗬 @Botography"
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6026248826 1750583099").split()):
